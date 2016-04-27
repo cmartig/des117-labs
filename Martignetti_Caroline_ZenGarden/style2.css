@@ -1,0 +1,36 @@
+body {color:#90B8D4;
+    font-family:'Helvetica', 'Courier', sans-serif;
+    background-image:url(images/0771e8a23708d50259ebc861907b0786_large.jpeg);
+    background-size:1625px 1100px;
+    background-repeat: repeat-y;
+    background-position: right top;
+}
+header {
+    font-family:'Helvetica', 'Courier', sans-serif;
+        font-size:35pt;
+    color:#F8F5FA;
+    text-align: center;
+}
+.summary {text-align: center;
+    padding: 10px;
+}
+aside,.explanation,.summary,.participation,.benefits,.requirements,.preamble{background-color:#F2F7FA;
+font-size:18pt;
+    width:980px;
+        margin-left: auto;
+    margin-right:auto;
+}
+
+
+
+footer {text-align: center;
+    font-size:14pt;
+}
+.sidebar{
+    font-size: 14pt;
+    border: 5px dashed #90B8D4;
+    text-align: left;
+}
+
+ul {list-style-image: url(images/ls_icon_zen.gif);
+}
