@@ -1,0 +1,133 @@
+body {
+    background-color:#FFFFFF;
+    color:black;
+    margin: auto;
+    align-content: center;
+    }
+
+p  {
+    font-family: 'Myriad','Verdana',sans-serif;
+    font-size:20pts;
+    }
+        
+a {
+    width: 200px;
+    font-size:20pt;
+    padding:10px;
+    color:black;
+    text-decoration: none;
+    margin-top: 10px;   
+    }
+a:hover{
+    color:#eef3f9;
+    background-color: darkgrey;
+    border-radius:25px;
+        }
+
+h1 {
+    font-size: 50pt;
+    text-align: center;
+    padding:10px;
+    } 
+h2 {
+    font-family: 'Myriad','Verdana',sans-serif;
+    font-size: 35pts;
+    text-align: center;
+    }
+
+.banner {
+    width: 100%
+        }
+
+#sign-up {
+    font-size: 15pt;
+    text-align: right;
+    margin-top: 25px;
+    }
+#container {
+    width:960px;
+    align-content: center;
+    padding: inherit;
+    margin: auto;
+    }
+
+.navimage {
+    padding: 30px 0px 0px 30px;
+          }
+nav {
+    font-family: 'Minion','Georgia',serif;
+    font-size: 20pt;
+    text-align:left;
+    padding:10px;
+    }
+
+#gofetch {
+    background-image:url(Images/bone.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    font-size:40pt;
+    padding: 40px;
+    background-position: center;
+        }
+
+.welcome {padding :0 0 40px 0;}
+
+.center {
+    text-align: center;
+    font-size: 20pt;
+        }
+
+.floatleft {float: left;}
+
+.row {clear:left;}
+
+.onehalf {width: 50%}
+
+.right-text {text-align: right;}
+
+.header {border-bottom: #eef3f9 10px solid;}
+
+.border{border:#eef3f9 15px solid;}
+
+.dogbio { 
+    width:460px;
+    float:left;
+        }
+
+.footer {padding: 300px 0 0 0;}
+
+footer img {height:20px;}
+
+.copyright {width:300px}
+    
+.donate {background-color:lightgray;
+        border-radius: 25px;
+        text-align: center;
+        margin: auto;
+        }
+.img {margin-top: 25px}
+
+.onethird {width:33%;
+   }
+.background{
+    background-color:#eef3f9;
+    }
+.padding {padding: 0 0 0 12px;
+margin:20px}
+
+.meet {background-color:lightgray;
+    border-radius: 25px;
+margin-left:300px;
+margin-top: 30px;
+text-align:center}
+
+.form {margin:60px 300px;} 
+
+.onefourth {width: 25%}
+
+.profile {margin-top: 20px;
+    border-radius: 10px;
+    margin-left:150px
+}
+
+.team {margin:100px;}
