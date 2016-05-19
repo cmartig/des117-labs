@@ -1,0 +1,195 @@
+<!doctype html>
+<html>
+
+<head>
+    <style>
+h1{display:block;
+width:400px;
+    font-family:'Bodoni 72';
+font-size:90pt;
+text-align:left;
+padding: 0 0 0 100px;
+position:relative;
+top:65px;
+left:50px;
+z-index:1;
+}
+h2 {font-family:'Bodoni 72';
+font-size:40pt;
+text-align:center;
+}
+h3{ font-family:'Bodani72';
+font-size:25pt;
+}
+body {background-color:white;
+}
+nav { background-color:#c4e7f0;
+font-family:'Helvetica', "San-serif";
+font-size: 16pt;
+padding:25px 10px 20px 125px;
+text-align:justify;
+font-variant:small-caps;
+position:relative;
+top:-30px;
+}
+.center {text-align:center;
+}
+header {position:relative;
+}
+#profile-image { border-radius:200px;
+    position:relative;
+    top:300px;
+
+}
+
+
+.text-post {display:inline-block;
+    font-family:'Helvetica','Verdana','San serif';
+    font-size:16pt;
+    text-align:left;
+    width:33%;
+    position:relative;
+    top:-100px;
+}
+
+.post-image {width:500px;
+border-right:solid #c4e7f0;
+border-left:solid #c4e7f0;
+padding:0 20px 0 20px;
+position:relative;
+top:-100px;
+margin:auto;
+            
+}
+
+ul li {display:inline;
+        font-family:'Bodoni 72';
+}
+        
+.container {margin:auto;
+padding:100px 0px 0px 0px;
+text-align:center;
+ position:relative;
+ top:-200px;
+ width 800px
+ }
+
+.caption {font-family:'Bodani 72';
+font-size:20pt;
+font-style:bold;
+position:relative;
+top:-100px;
+}
+
+.link {
+    padding:30px;
+text-decoration:none;
+color:black
+}
+.link:hover {color:grey;
+background-color: rgba(255, 255, 255, 0.5);
+}
+.repost li{display:inline-block;
+        position:relative;
+        top:-100px;
+}
+.dateformat {font-family:'Bodani 72';
+        font-size:20pt;
+        font-variant:small-caps;
+        text-align:justify;
+        width:90px;
+        margin:0px 100px 0px .5px;
+        position:relative;
+        top:-25px;
+        left:50px;
+}  
+.datebackground { display:block;
+width:75px;
+    background-color:rgba(197, 200, 201,0.2);
+    background-size:200px 200px;
+    letter-spacing:3px;
+    text-align:center;
+}
+
+</style>
+</head>
+
+<body class="container">
+    <header>
+       <p> <img src="{PortraitURL-128}" id="profile-image"> </p>
+        <h1> {Title} </h1>
+        <h2> {Description} </h2>
+    </header>
+<div>
+    <nav>
+       <a href="https://www.facebook.com" class="link"> facebook </a>
+      <a href="https://www.pinterest.com" class="link"> pinterest</a>
+      <a href="https://www.instagram.com" class="link"> instagram</a>
+      <a href="https://twitter.com" class="link"> twitter </a>
+    
+    </nav>
+</div>
+    {block:Posts} 
+        {block:Text}
+         {block:Date}
+     <div class="dateformat">
+     <ul>
+      <div class="datebackground">
+          <li>{Month} </li>
+      </div>
+     <div class="datebackground">
+          <li>{DayOfMonth} </li>
+     </div>
+     <div class="datebackground">
+        <li> {year}</li>  
+     </div>
+     </ul>
+     </div>
+     {/block:Date}
+            <div class="text-post center">
+            <h3> {Title} </h3> 
+             <p>    {Body}</p> 
+            </div>
+            <div class="repost">
+            <ul>
+                <li>{LikeButton}</li>
+                <li>{ReblogButton}</li>
+            </ul>
+                
+            </div>
+            
+        {/block:Text} 
+        
+        {block:Photo}
+         {block:Date}
+          <div class="dateformat">
+     <ul>
+      <div class="datebackground">
+          <li>{Month} </li>
+      </div>
+     <div class="datebackground">
+          <li>{DayOfMonth} </li>
+     </div>
+     <div class="datebackground">
+        <li> {year}</li>  
+     </div>
+     </ul>
+     </div>
+     {/block:Date}
+     <div class="caption">
+     <p>{caption}</p>
+     </div>
+       <p class="center"> <img src="{PhotoURL-HighRes}" class="post-image">         </p>
+                    <div class="repost">
+            <ul>
+                <li>{LikeButton}</li>
+                <li>{ReblogButton}</li>
+            </ul>
+                
+            </div>
+        {/block:Photo}
+    
+    {/block:Posts}
+</body>
+
+</html>
